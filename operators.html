@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in js</title>
+</head>
+<body>
+    <script>
+        let numOne = 10;
+        let numTwo = 20;
+
+        console.log(numOne,numTwo); //10,20
+        
+        // 1.Arithmetic operators
+
+        let total = numOne + numTwo;//30
+        console.log(total);
+        //we can do the same in all other operations like sub,mul,div, and modulus(%)
+
+        //increment---prefix increment(++i) and postfix increment(i++)
+        //decrement--prefix decrement(--i) and postfix decrement(i--)
+
+
+        console.log(++numOne);//11
+
+        numTwo++;
+        console.log(numTwo); //21
+        
+
+        console.log(--numOne); //9
+
+        numTwo--;
+        console.log(numTwo); //19
+
+
+
+        //2.Assignment operators
+
+        let a = 10;
+        let b = 20;
+         a+=b;  //a=a+b
+        console.log(a);//30
+
+        //same will do for sub,mul,div,and modulus
+
+        // 3.Comparison operators
+
+        //==(double equals) which compares only values not datatypes
+
+        console.log('123'=='Navii');//false bcoz values are not same
+        console.log('123' == 123);//true bcoz both values are same 
+        console.log(undefined==undefined);//true
+        console.log(undefined == null);//true
+
+        //=== (triple equals) which compares both values and datatypes
+
+        console.log('123'=== 123);//false bcoz 1st is string and 2nd is num
+        console.log(undefined==='undefined'); //false
+        console.log(undefined === undefined); //true
+        
+
+        //greater than
+        console.log(10>5); //true
+        console.log(10>=10); //true
+
+        //lesser than
+        console.log(10<5); //false
+        console.log(10<=10); //true
+        
+        //not equals
+        console.log(10!=5); //true
+        
+
+        // 4.Logical operators
+
+        //AND
+
+        console.log(true && true); //t
+        console.log(true && false); //f
+        console.log(false && true);//f
+        console.log(false && false); //f
+
+
+        //OR
+        console.log(true || true); //t
+        console.log(true || false); //t
+        console.log(false || true);//t
+        console.log(false || false); //f
+
+        //  not
+        console.log(!true); //f
+        console.log(!false); //t
+        
+        
+
+        
+        
+
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
