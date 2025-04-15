@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string-group of characters.
+        //ways:2
+
+        //1.string literal way:
+
+        let course = 'javaScript';
+        console.log(course);
+        console.log(typeof course); // string dt
+        console.log(course.length); //10
+
+
+        //loop-for loop
+
+        for(let i=0; i<course.length; i++){
+            console.log(course[i]);
+        }
+
+
+        //string constructor method
+
+        let mode=new String('offline / online');
+        console.log(mode);
+        
+
+        //single quotes inside the double quotes
+
+        let message = 'Navii said "java" is best';
+        console.log(message);
+        
+        //double quotes inside the single quotes
+
+        let messages = "pallavi said, it's 9 o clock";
+        console.log(messages);
+        
+        //template literal /multiple string /Backticks
+
+        let feedback =  `A job description is a written document that outlines the key responsibilities, qualifications, and expectations for a specific role, helping both employers and candidates understand the job's requirements and how it fits within the organization. `
+        console.log(feedback);
+
+
+        //string interpolation:
+        let name ='navii';
+        let role = 'java developer';
+        let status = 'Active';
+        console.log(name, role, status);
+
+        // console.log(`my name is ${name}. and i'm ${role} .i am always ${active}`);
+        
+        
+        //string:literal way
+        let technology = 'UI Development';
+        console.log(technology);
+        console.log(technology.length); //14
+        //1. indexOf()
+        console.log(technology.indexOf('e'));//4
+        //2.lastIndexOf
+        console.log(technology.lastIndexOf('e'));//11
+        //3.charAt()
+        console.log(technology.charAt(0));//u
+        console.log(technology.charAt(2));//space
+        console.log(technology.charAt(3));//d
+        //4.charCodeAt() :-ASCII TABLE
+        console.log(technology.charCodeAt(0));//85 bcoz the U ALPH ascii value is 85
+        //5.substring()
+        console.log(technology.substring(3,14))//3 is starting index value and 14 is last index value +1 so 14 so output is development 
+        console.log(technology.substring(1,13));// I Developmen
+        //6.substr()
+
+        //7.toUpperCase()
+        //8.toLowerCase()
+        //9.split()
+        console.log(technology.split());// is converts into array method so output is like ['UT Development']
+
+        //10.replace()
+        console.log(technology.replace('UI','front-end'));//fiest is older value next is newer value which you want to add 
+        //11.replaceAll()
+        console.log(technology.replaceAll("UI Development","full-stack-deve"));//first will be older value next will be which you wamt to add
+        
+
+        //12.includes()
+        console.log(technology.includes('U'));//TRUE because it is present in a variable if U is not present the output will give a false
+        console.log(technology.includes('T'));//false becoz T is not present here t is present
+        
+        
+
+        
+
+        
+        
+
+        
+
+        
+
+        
+        
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>
