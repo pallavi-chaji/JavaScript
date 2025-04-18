@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-and-methods</title>
+</head>
+<body>
+    <script>
+        //object creation
+        //1.literal way 
+        let person_details = {
+            name : 'pallavi',
+            Number : 1234,
+            place : 'sdp',
+            course : 'jfs',
+            mode : 'offline'
+        }
+        console.log(person_details);
+        
+        //2.constructor way 
+        let training = new Object();
+        console.log(training);
+        
+        //to add a new property to my object
+        training.name = 'AIT';
+        training.usn = 1234;
+        training.place = 'bng';
+        // to get the output
+        console.log(training);
+        
+        //3. Constructor function way is also there it will see after the function
+
+        //to add a new property into my existing object
+        person_details.email= 'pallavi@gmail.com';
+        console.log(person_details);
+        //here email property is added in to a existing obj
+
+        //to modify the existing property from a obj
+
+        person_details.name ='malli';
+        console.log(person_details);
+
+        //To extract an existing property value
+
+        // 1.dot notation
+        
+        console.log(person_details.course);//jfs
+
+        //another apporch for same dot notation
+         let res1 = person_details.course;
+         console.log(res1);//jfs
+
+
+         //2.Bracket Notation
+
+         console.log(person_details['mode']);
+         //another apporch
+         let res2 = person_details['mode'];
+         console.log(res2);
+
+         //object methods
+         //  :to get all the key from an object
+
+         let keysRes = Object.keys(person_details);
+        console.log(keysRes);//keys means name,number,place,course these all are keys
+
+        //to get all values from an object
+        let valuesRes = Object.values(person_details) ;
+        console.log(valuesRes);//malli,1234,'sdp'
+
+        //to check a property is available or not
+        console.log(person_details.hasOwnProperty('name'));//true
+        console.log(person_details.hasOwnProperty('id'));//false bcoz id is not present
+
+        let newObj = Object.entries(person_details);
+        console.log(newObj);
+
+        let laptop = {
+            brand : 'dell',
+            price : 20000
+        
+        }
+        let mobile = {
+            amount : 12000,
+            color :'black'
+        }
+        //to add two objects
+        let obj = Object.assign(laptop,mobile);
+        console.log(obj);
+        
+        
+        
+
+        
+
+I
+
+
+         
+
+
+
+
+        
+
+
+    </script>
+
+</body>
+</html>
