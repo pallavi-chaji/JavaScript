@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-conversion-js</title>
+</head>
+<body>
+    <script>
+
+        //Numeric string
+        let number = '1234';
+        console.log(number);
+        console.log(typeof number);
+
+        //to convert numeric string into a number
+
+        //1. Number constructor
+        let res = Number(number);
+        console.log(res);
+        console.log(typeof res );//number
+        
+        // 2.Moder operator: 2020
+
+        console.log(+number);
+        console.log(typeof number); //string
+
+        //3.parseInt()
+        console.log(parseInt(number));
+
+        //parseFloat()
+        console.log(parseFloat(number));
+        
+
+        //to convert number into a string
+        let str = 1234;
+        console.log(str);
+        console.log(typeof str);
+
+        //1. String method
+        let strRes = String(str);
+        console.log(strRes);
+        console.log(typeof strRes);
+
+        //2.toString()
+        console.log(str.toString());
+
+        //Boolean conversion
+
+        //falsy values::
+        console.log(Boolean(''));
+        console.log(Boolean(0));
+        console.log(Boolean(null));
+        console.log(Boolean(undefined));
+        console.log(Boolean(-0));
+        
+        //type coercian
+
+        console.log(1+2); //3
+        console.log(1+'2');//12
+        console.log(2+3+undefined); //Nan
+        console.log(2+3+'undefined'); //5undefined
+        console.log(2+3+null);//5
+        console.log(2+3+undefined+3);//Nan
+        console.log(2-null);//2
+        console.log(2-4+undefined);//Nan  
+
+    </script>
+</body>
+</html>
