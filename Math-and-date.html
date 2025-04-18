@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math-and-date-obj</title>
+</head>
+<body>
+    <script>
+        //Math object and it's method
+
+        let petrol_price = 102.99;
+        console.log(petrol_price);//102.99
+
+        //math obj method: ceil and floor
+        console.log(Math.ceil(petrol_price));//103 ceil means gets high value
+
+        console.log(Math.floor(petrol_price));//102 floor means get min value
+
+
+
+        //round method:  if the point value is greater than 5 or less than 5 it will check here is 99 soo 103 if 49 it will get 102
+        console.log(Math.round(petrol_price));103
+        //absoulate
+        console.log(Math.abs(petrol_price));
+        //diff b/w absoulate and common console.log is
+        //if the petrol_price = 102.99ffygh
+        //in this situation common will get same as input but in absolate it only get numbers only
+        console.log(Math.sqrt(4));//2
+        console.log(Math.sqrt(25));//5
+        //sign: it give the first value sign positive or negative
+        console.log(Math.sign(10));//1
+        console.log(Math.sign(-10));//-1
+        
+        //DATE:get day /date/month
+        let today = new Date();
+        console.log(today);
+        console.log(today.getDay());//5 means friday
+        console.log(today.getDate());//18
+        console.log(today.getHours());//18 means 6
+        console.log(today.getFullYear());//2025
+
+        //set the date and months
+
+        // today.setDate(25);
+        // today.setMonth(3);
+        // today.getFullYear(2024);
+        
+        // console.log(today);
+        
+        //to set the dateformat
+        function getDateFormate(){
+            return(today.getDate()) +"" + (today.getMonth()) + "" + (today.getFullYear());
+
+        }
+        console.log(getDateFormate());
+        //give 1832025
+        function getDateFormate(){
+            return(today.getDate()) +"/0" + (today.getMonth()) + "/" + (today.getFullYear());
+
+        }
+        console.log(getDateFormate());
+        //give 18/3/2025
+        
+        
+        
+
+    </script>
+</body>
+</html>
