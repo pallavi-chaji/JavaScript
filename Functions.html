@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions-js</title>
+</head>
+<body>
+    <script>
+        //functions : block of code or grp of statements
+
+        // //function declaration
+        // function sayHello(){
+        //     //logic
+        //     alert('Welcome to js function');
+        // }
+        // //calling a function
+        // sayHello();
+        
+        //types of functions
+        //1.A function without parameters
+        function add(){
+            let addOne = 10;
+            let addTwo = 20;
+            let result = addOne+addTwo;
+            console.log(result);//30
+            
+        }
+        add();
+
+        //2.function with parameters
+
+        function addOne(a,b){
+            let res = a+b;
+            console.log(res);//3
+        }
+        addOne(1,2);
+        //here a,b are parameters and 1,2 are arguments
+
+        //example for with parameters
+        // function admin(name,password){
+        //     if ((name=='pallavi') &&(password=='1234')){
+        //         alert('in this laptop user name is "pallavi"')
+
+
+        //     }
+        //     else{
+        //         alert('in this laptop is not pallavi');
+        //     }
+
+
+        //     }
+        //     admin('pallavi','1234');
+
+            //3.A function with default parameters
+            function totalFee(amount,discount=10){
+                let finalFee = amount-(amount*discount/100);
+                console.log(finalFee);//36000
+           
+            }
+            totalFee(40000);
+            //here no need to pass the discount value it automaticallt takes the defualt value
+
+         //4/return keyword/ statement
+            function addition(a,b){
+                return a+b;
+            }
+            console.log(addition(10,20));//30
+            //if we not call the return it will shows a undefined
+            
+    </script>
+</body>
+</html>
