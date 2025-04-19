@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function </title>
+</head>
+<body>
+    <script>
+        //function declaration
+        function message(){
+            document.write('good mrng');
+        }
+        message();
+
+        //Function Expression: it cannot contain function name it hv keys 
+        //or Anonymous function or variable function
+         let fun_exp = function(){
+            document.write('we are learning');
+        }
+        fun_exp();
+
+
+        //Expression examples
+         let add = function(a,b){
+            let sum = a+b;
+            console.log(sum);
+            
+        }
+        add(1,2);
+
+        // let add=function(a,b){
+        //     let sum = a+b;
+        //     return sum;
+        // }
+        // console.log(add(1,2));
+
+        //Arrow function
+
+        let addition = ( m,n)=>{
+            let sum = m+n;
+            return sum;
+        }
+        console.log(addition(10,20));
+
+        // let addition = (m,n)=>sum = m+n;
+        // console.log(addition(10,20));
+        
+        //Nested functions
+        function parent (){
+            let message = 'hello';
+
+            function child(){
+              let message = 'Hello child';
+              console.log(message);
+              
+                
+            }
+            console.log(message);
+            child();  
+        }
+        parent();
+         //its called as inheritance
+
+
+         //self invoking functions ( IIFE /IIFA)
+         /*
+            syntax:
+
+            (function) (){
+            //codee
+         } )()
+            */
+
+        (function(){
+            alert('we are creating self invoking function')
+
+        })()
+
+
+        let product = {
+            brand : 'Dell',
+            price : 12000,
+            feature : 'more',
+            year : 2025,
+            moreInfo : function(){
+                console.log(`the product ${product.brand} price is ${product.price} and it's features are ${product.feature}it was introduced in the year of ${product.year}`);
+
+                
+            }
+            
+        }
+        product.moreInfo();
+        
+
+    </script>
+</body>
+</html>
